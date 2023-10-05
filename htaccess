@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^cancerheal.in$
+RewriteRule ^(.*)$ https://cancerheal.in/$1 [R=301,L]
+
+
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+

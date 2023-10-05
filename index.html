@@ -1170,15 +1170,15 @@
                     <!--end success message -->
 
                     <!--begin contact form -->
-                    <form id="contact-form" class="contact" action="php/contact.php" method="post">
+                    <form id="contact-form" class="contact" action="send.php" method="post">
 
-                        <input class="contact-input white-input" required="" name="contact_names" placeholder="Full Name*" type="text">
+                        <input class="contact-input white-input" required="" id="name" name="contact_names" placeholder="Full Name*" type="text">
 
-                        <input class="contact-input white-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                        <input class="contact-input white-input" required="" id="email" name="contact_email" placeholder="Email Adress*" type="email">
 
-                        <input class="contact-input white-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">
+                        <input class="contact-input white-input" required="" id="phone" name="contact_phone" placeholder="Phone Number*" type="text">
 
-                        <textarea class="contact-commnent white-input" rows="2" cols="20" name="contact_message" placeholder="Your Message..."></textarea>
+                        <textarea class="contact-commnent white-input" rows="2" cols="20" id="message" name="contact_message" placeholder="Your Message..."></textarea>
 
                         <input value="Send Message" id="submit-button" class="contact-submit" type="submit">
 
